@@ -76,5 +76,16 @@ function sort(list){
 ### HackerRank Problems
 
 - [Diagonal Difference](https://www.hackerrank.com/challenges/diagonal-difference/problem) (Algorithm, Warmup)
+
+def diagonalDifference(arr):
+    l2r_diagonal = 0
+    r2l_diagonal = 0
+    col_index = 2
+    for i in range(len(arr)):
+        l2r_diagonal += arr[i][i]
+        r2l_diagonal += arr[i][col_index]
+        col_index -= 1
+    return abs(l2r_diagonal - r2l_diagonal)
+    
 - [Left Rotation](https://www.hackerrank.com/challenges/array-left-rotation/problem) (Data Structures, Array)
 - [Get Node Value](https://www.hackerrank.com/challenges/get-the-value-of-the-node-at-a-specific-position-from-the-tail) (Data Structures, Linked List)
