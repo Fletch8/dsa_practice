@@ -11,7 +11,10 @@
 ---
 Function 1 Time Complexity:
 
+O(1)
+
 Explain your answer:
+this only makes one comparison and only runs once
 ```
 function bobIsFirst(people){
   return people[0] == 'bob'
@@ -19,8 +22,9 @@ function bobIsFirst(people){
 ```
 ---
 Function 2 Time Complexity:
-
+O(n)
 Explain your answer:
+It will always run a set amount of times given the input size (n)
 ```
 function wordOccurrence(word, phrase){
   let result = 0
@@ -35,8 +39,10 @@ function wordOccurrence(word, phrase){
 ```
 ---
 Function 3 Time Complexity:
-
+O(n^2)
 Explain your answer:
+for each element(n) iterated, it runs a second loop iterating through 'n' elements. n^2
+
 ```
 function sort(list){
   for(let i = 0; i < list.length - 1; i++){
@@ -59,9 +65,12 @@ function sort(list){
 - What method would you use to look up a word in a dictionary (book, not Python)?
 
 - Imagine you have a closet full of shirts. What can you do to organize your shirts for easy retrieval?
+  -You can organize the shirts based different occasions such as casual, professinal, night-out, etc..
 
 - Describe advantages and disadvantages of the most popular sorting algorithms.
-
+ - many of the best algorithms (ex:merge sort) work better with larger sets of data 
+   due their constant or O(log(n)) time complexities
+                        
 ---
 
 ### HackerRank Problems
